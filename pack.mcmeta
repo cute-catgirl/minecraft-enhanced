@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": 46,
+    "description": "Enhances the survival experience"
+  },
+  "filter": {
+    "block": [
+        {
+            "namespace": "minecraft",
+            "path": "advancement"
+        }
+    ]
+  }
+}

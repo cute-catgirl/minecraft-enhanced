@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone_pickaxe"
+      },
+      "title": {
+        "translate": "advancements.story.stone_pickaxe.name",
+        "fallback": "Getting an Upgrade"
+      },
+      "description": {
+        "translate": "advancements.story.stone_pickaxe.description",
+        "fallback": "Construct a better pickaxe"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/pickaxe",
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:stone_pickaxe"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

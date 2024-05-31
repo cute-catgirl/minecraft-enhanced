@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:diamond"
+      },
+      "title": {
+        "translate": "advancements.story.diamonds.name",
+        "fallback": "Diamonds!"
+      },
+      "description": {
+        "translate": "advancements.story.diamonds.description",
+        "fallback": "Acquire a diamond"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/iron_pickaxe",
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:diamond"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

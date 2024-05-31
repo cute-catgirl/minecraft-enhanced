@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:iron_ingot"
+      },
+      "title": {
+        "translate": "advancements.story.iron.name",
+        "fallback": "Acquire Hardware"
+      },
+      "description": {
+        "translate": "advancements.story.iron.description",
+        "fallback": "Mine and smelt some iron"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/stone_pickaxe",
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:iron_ingot"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

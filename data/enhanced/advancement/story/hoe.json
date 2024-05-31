@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:wooden_hoe"
+      },
+      "title": {
+        "translate": "advancements.story.hoe.name",
+        "fallback": "Time to Farm"
+      },
+      "description": {
+        "translate": "advancements.story.hoe.description",
+        "fallback": "Use planks and sticks to make a hoe"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/wood",
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:wooden_hoe"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

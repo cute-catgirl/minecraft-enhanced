@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cake"
+      },
+      "title": {
+        "translate": "advancements.story.cake.name",
+        "fallback": "The Lie"
+      },
+      "description": {
+        "translate": "advancements.story.cake.description",
+        "fallback": "Wheat, sugar, milk, and eggs!"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/hoe",
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:cake"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

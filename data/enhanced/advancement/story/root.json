@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:crafting_table"
+        "id": "minecraft:grass_block"
       },
       "title": {
         "translate": "advancements.story.root.name",
@@ -12,24 +12,17 @@
         "fallback": "The heart and story of the game"
       },
       "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
-      "show_toast": true,
-      "announce_to_chat": true
+      "show_toast": false,
+      "announce_to_chat": false
     },
     "criteria": {
-      "crafting_table": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "items": "minecraft:crafting_table"
-            }
-          ]
-        }
+      "tick": {
+        "trigger": "minecraft:tick"
       }
     },
     "requirements": [
       [
-        "crafting_table"
+        "tick"
       ]
     ]
   }

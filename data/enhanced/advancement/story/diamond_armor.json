@@ -1,0 +1,99 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:diamond_chestplate"
+      },
+      "title": {
+        "translate": "advancements.story.diamond_armor.name",
+        "fallback": "Cover Me with Diamonds"
+      },
+      "description": {
+        "translate": "advancements.story.diamond_armor.description",
+        "fallback": "Diamond armor saves lives"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/diamonds",
+    "criteria": {
+        "diamond_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                    "equipment": {
+                        "head": {
+                        "items": "minecraft:diamond_helmet"
+                        }
+                    }
+                    }
+                }
+                ]
+            }
+        },
+        "diamond_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                    "equipment": {
+                        "chest": {
+                        "items": "minecraft:diamond_chestplate"
+                        }
+                    }
+                    }
+                }
+                ]
+            }
+        },
+        "diamond_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                    "equipment": {
+                        "legs": {
+                        "items": "minecraft:diamond_leggings"
+                        }
+                    }
+                    }
+                }
+                ]
+            }
+        },
+        "diamond_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                    "equipment": {
+                        "feet": {
+                        "items": "minecraft:diamond_boots"
+                        }
+                    }
+                    }
+                }
+                ]
+            }
+        }
+    },
+      "requirements": [
+        ["diamond_helmet"],
+        ["diamond_chestplate"],
+        ["diamond_leggings"],
+        ["diamond_boots"]
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+{
+    "display": {
+        "description": {
+          "translate": "advancements.story.nether.description",
+          "fallback": "Build, light, and enter an obsidian portal"
+        },
+        "icon": {
+          "count": 1,
+          "id": "minecraft:flint_and_steel"
+        },
+        "title": {
+          "translate": "advancements.story.nether.name",
+          "fallback": "We Need to Go Deeper"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
+      },
+    "parent": "enhanced:story/lava_bucket",
+    "criteria": {
+      "entered_nether": {
+        "conditions": {
+          "to": "minecraft:the_nether"
+        },
+        "trigger": "minecraft:changed_dimension"
+      }
+    },
+    "requirements": [
+      [
+        "entered_nether"
+      ]
+    ]
+  }

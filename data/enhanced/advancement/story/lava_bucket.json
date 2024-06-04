@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:lava_bucket"
+      },
+      "title": {
+        "translate": "advancements.story.lava_bucket.name",
+        "fallback": "Hot Stuff"
+      },
+      "description": {
+        "translate": "advancements.story.lava_bucket.description",
+        "fallback": "Fill a bucket with lava"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/iron",
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:lava_bucket"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

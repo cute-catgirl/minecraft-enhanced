@@ -1,0 +1,42 @@
+{
+    "display": {
+        "description": {
+          "translate": "advancements.story.shield.description",
+          "fallback": "Deflect a projectile with a shield"
+        },
+        "icon": {
+          "count": 1,
+          "id": "minecraft:shield"
+        },
+        "title": {
+          "translate": "advancements.story.shield.name",
+          "fallback": "Not Today, Thank You"
+        },
+        "show_toast": true,
+      "announce_to_chat": true
+      },
+    "parent": "enhanced:story/iron",
+    "criteria": {
+      "deflected_projectile": {
+        "conditions": {
+          "damage": {
+            "type": {
+              "tags": [
+                {
+                  "expected": true,
+                  "id": "minecraft:is_projectile"
+                }
+              ]
+            },
+            "blocked": true
+          }
+        },
+        "trigger": "minecraft:entity_hurt_player"
+      }
+    },
+    "requirements": [
+      [
+        "deflected_projectile"
+      ]
+    ]
+  }

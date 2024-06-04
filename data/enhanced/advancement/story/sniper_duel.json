@@ -1,0 +1,58 @@
+{
+    "parent": "enhanced:story/monster_hunter",
+    "criteria": {
+      "killed_skeleton": {
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:skeleton",
+                "distance": {
+                  "horizontal": {
+                    "min": 50.0
+                  }
+                }
+              }
+            }
+          ],
+          "killing_blow": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
+          }
+        },
+        "trigger": "minecraft:player_killed_entity"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.story.sniper_duel.description",
+        "fallback": "Kill a Skeleton from at least 50 blocks away"
+      },
+      "frame": "challenge",
+      "icon": {
+        "count": 1,
+        "id": "minecraft:arrow"
+      },
+      "title": {
+        "translate": "advancements.story.sniper_duel.name",
+        "fallback": "Sniper Duel"
+      },
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "requirements": [
+      [
+        "killed_skeleton"
+      ]
+    ],
+    "rewards": {
+      "experience": 50
+    },
+    "sends_telemetry_event": true
+  }

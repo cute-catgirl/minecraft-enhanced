@@ -1,0 +1,28 @@
+{
+    "parent": "enhanced:story/diamonds",
+    "criteria": {
+      "enchanted_item": {
+        "trigger": "minecraft:enchanted_item"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.story.enchanting.description",
+        "fallback": "Enchant an item at an enchanting table"
+      },
+      "icon": {
+        "count": 1,
+        "id": "minecraft:enchanted_book"
+      },
+      "title": {
+        "translate": "advancements.story.enchanting.name",
+        "fallback": "Enchanter"
+      }
+    },
+    "requirements": [
+      [
+        "enchanted_item"
+      ]
+    ],
+    "sends_telemetry_event": true
+  }

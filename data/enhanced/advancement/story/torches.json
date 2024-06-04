@@ -1,0 +1,37 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:torch"
+      },
+      "title": {
+        "translate": "advancements.story.torch.name",
+        "fallback": "Let There Be Light"
+      },
+      "description": {
+        "translate": "advancements.story.torch.description",
+        "fallback": "Have an entire stack of torches in your inventory"
+      },
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "enhanced:story/pickaxe",
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": "minecraft:torch",
+                  "count": 64
+                }
+              ]
+            }
+          }
+    },
+    "requirements": [
+      [
+        "item"
+      ]
+    ]
+  }
+  

@@ -1,0 +1,36 @@
+{
+    "parent": "enhanced:recipes/root",
+    "criteria": {
+      "has_stick": {
+        "conditions": {
+          "items": [
+            {
+              "items": "#minecraft:stone_crafting_materials"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      },
+      "has_the_recipe": {
+        "conditions": {
+          "recipe": "minecraft:stone_pickaxe"
+        },
+        "trigger": "minecraft:recipe_unlocked"
+      }
+    },
+    "requirements": [
+      [
+        "has_the_recipe",
+        "has_stick"
+      ]
+    ],
+    "rewards": {
+      "recipes": [
+        "minecraft:stone_pickaxe",
+        "minecraft:stone_sword",
+        "minecraft:stone_hoe",
+        "minecraft:stone_axe",
+        "minecraft:stone_shovel"
+      ]
+    }
+  }
